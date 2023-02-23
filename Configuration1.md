@@ -12,7 +12,7 @@ gcc testptp.c -o testptp
 ```
 On J2, pin 8 = SYNC_IN, pin 9 = SYNC_OUT
 A number of commentators say pin 8 is not wired, to be verified.
-Run the following commands to get a 1 PPS output, it is c. 6us wide and 3V3. 
+Run the following commands to get a 1 PPS output, it is c. 6µs wide and 3V3. 
 ```
 sudo ./testptp -d /dev/ptp0 -L0,2
 sudo ./testptp -d /dev/ptp0 -p 1000000000
