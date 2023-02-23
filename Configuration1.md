@@ -13,3 +13,4 @@ Run the following commands to get a 1 PPS output.
 sudo ./testptp -d /dev/ptp0 -L0,2
 sudo ./testptp -d /dev/ptp0 -p 1000000000
 ```
+![](1pps.jpg)
