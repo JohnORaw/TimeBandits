@@ -1,15 +1,4 @@
-Using a generic CM4 IO Board, install linuxptp
 
-IO board manual https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
-
-```
-sudo apt install linuxptp
-```
-Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testing/selftests/ptp/testptp.c and compile
-```
-gcc testptp.c -o testptp
-./testptp -h
-```
 On J2, pin 8 = SYNC_IN, pin 9 = SYNC_OUT
 A number of commentators say pin 8 is not wired, to be verified.
 Run the following commands to get a 1 PPS output, it is c. 6µs wide and 3V3. 
