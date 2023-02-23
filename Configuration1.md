@@ -1,4 +1,5 @@
 Using a generic CM4 IO Board, install linuxptp
+
 IO board manual https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
 
 ```
