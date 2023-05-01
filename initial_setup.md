@@ -10,3 +10,7 @@ Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testin
 gcc testptp.c -o testptp
 ./testptp -h
 ```
+Check that the Ethernet card supports hardware time stamping
+```
+ethtool -T eth0
+```
