@@ -1,5 +1,5 @@
 # KMNServer 
-These are the build instruction for the time server KMNServer. This server is intended to synch a local hardware clock with HEANet over PtP.
+These are the build instruction for the time server in the KMN data centre. This server is intended to synch a local hardware clock with HEANet over PtP.
 
 ## Initial Setup
 The hardware is a legacy Dell PE R520. The server was set to UEFI Boot and UB2204 was installed from a USB key. IP address is via DHCP and only interface *eno1* has a connection. Updates were carried out.
@@ -17,7 +17,7 @@ The download file is renamed and extracted.
 - x for extract
 - v for verbose
 - z for gnuzip
-- f for file, should come at last just before file name.
+- f for filename, which must be at the end.
 ```
 mv download linuxptp-3.1.1.tgz
 tar -xvzf ./linuxptp-3.1.1.tgz
@@ -26,7 +26,9 @@ tar -xvzf ./linuxptp-3.1.1.tgz
 ```
 sudo apt install make gcc
 ```
-Working directory is changed to ./linuxptp-3.1.1 **make** is run. This should build the current version of the application. Check for errors!
+Working directory is changed to ./linuxptp-3.1.1
+
+**make** is run, this should build the current version of the application. Check for errors!
 ```
 cd linuxptp-3.1.1/
 make
