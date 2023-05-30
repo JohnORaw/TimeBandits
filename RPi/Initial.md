@@ -6,7 +6,6 @@ sudo apt upgrade -y
 ```
 The IO board manual can be found at https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
 
-```
 ## Hardware Checks
 Check that the Ethernet card supports hardware time stamping
 ```
