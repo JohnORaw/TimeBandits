@@ -17,3 +17,7 @@ In Linux, the following command downloads this list.
 ```
 wget ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list
 ```
+To adjust PHC Clock for difference between UTC and TAI, the phc_ctl command is used.
+```
+sudo ts2phc -f ptp.config -s nmea -m
+```
