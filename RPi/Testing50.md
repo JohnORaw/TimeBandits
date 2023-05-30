@@ -40,3 +40,7 @@ $GNGGA,110824.00,5510.00032,N,00726.09001,W,1,12,0.58,115.4,M,53.9,M,,*55
 $GNGSA,A,3,18,26,27,23,16,10,08,,,,,,1.05,0.58,0.88,1*0F
 $GNGSA,A,3,83,73,74,66,67,82,80,,,,,,1.05,0.58,0.88,2*04
 ```
+# Precision
+This setup is fine for rough work and prototyping. When installing for fixed use, there are many more hoops to jump through.
+- Compensation for antenna cable length
+- Survey-In test, see the manufacturer's manual
