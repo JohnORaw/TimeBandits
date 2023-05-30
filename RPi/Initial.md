@@ -6,19 +6,6 @@ sudo apt upgrade -y
 ```
 The IO board manual can be found at https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
 
-## Install PtP
-The generic version in the repo has some downsides, but it works for these tests.
-```
-sudo apt install linuxptp
-```
-## Get TestPtP
-Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testing/selftests/ptp/testptp.c and compile
-```
-gcc -o testptp testptp.c -lrt
-./testptp -h
-ls /dev
-sudo ./testptp  -d /dev/ptp0 -L 0,1
-sudo ./testptp  -d /dev/ptp0 -e 5
 ```
 ## Hardware Checks
 Check that the Ethernet card supports hardware time stamping
