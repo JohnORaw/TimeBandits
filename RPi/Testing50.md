@@ -3,7 +3,7 @@ This demo uses the GNSS OEM ELT0113, wire as shown.
 - Red = +5VDC
 - Black = GND
 - Yellow = input to UART with signal level +3V3
-- 1PPS output of the GNSS board to pin #9 of header 2 (purple wire)
+- 1PPS output of the GNSS board to pin #9 SYNC_OUT of header 2 (purple wire)
 
 
 ![pi-ptp50](pi-ptp50.jpg)
