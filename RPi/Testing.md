@@ -1,5 +1,7 @@
-# Testing
-Connect the 1PPS output of the GNSS board to pin #9 of header 2
+# Testing pi-ptp50
+Connect the 1PPS output of the GNSS board to pin #9 of header 2 (purple wire)
+
+
 Set pin zero to external time stamp and test
 
 ```
