@@ -13,4 +13,7 @@ A leap second is inserted to bring clocks back in line with reality, either on J
 Leap seconds are announced by the IERS in its [Bulletin C.](https://www.iers.org/IERS/EN/Publications/Bulletins/bulletins.html) 
 For computational purposes, a standard file [leap-seconds.list](ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list) is used by Linux time services.
 
+In Linux, the following command downloads this list.
+```
 wget ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list
+```
