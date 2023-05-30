@@ -14,7 +14,6 @@ pi-ptp50 is
 # Static IP configuration:
 interface eth0
 static ip_address=192.168.3.50/24
-#static ip6_address=fd51:42f8:caae:d92e::ff/64
 static routers=192.168.3.10
 static domain_name_servers= 8.8.8.8
 ```
@@ -26,4 +25,9 @@ static ip_address=192.168.3.51/24
 static routers=192.168.3.10
 static domain_name_servers=8.8.8.8
 ```
-
+## Get testptp
+Download the source and compile
+```
+ wget https://raw.githubusercontent.com/torvalds/linux/master/tools/testing/selftests/ptp/testptp.c
+ gcc -o testptp testptp.c -lrt
+```
