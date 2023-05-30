@@ -1,26 +1,30 @@
-# Configuring a RPi CM4 as a PtP Grand Master
-This requires a GNSS, preferably with a UBX ZED R9T chip. For this project, the case mounting [ELT0113](https://gnss.store/zed-f9t-timing-gnss-modules/129-elt0113.html) was used. 
+# Configuring a pair of RPi CM4 as a PtP testbed
+## Set the hostname
 
-Using sudo **raspi-config** enable the first UART as a serial port.  
+Edit /etc/hostname and /etc/hosts to the correct hostnames
+PtP Master is pi-ptp50
+PtP Slave is pi-ptp51
 
-To enable the additional ports, edit /boot/config.txt at the end
-```
-# Changes by JOR
-dtoverlay = uart2
-dtoverlay = uart3
-dtoverlay = uart4
-dtoverlay = uart5
-```
-Identify the location of each UART using 
 
+
+## Set static IP addresses
+Edit /etc/dhcpcd.conf 
+
+pi-ptp50 is
 ```
-dtoverlay -h uart2
-dtoverlay -h uart3
-dtoverlay -h uart4
-dtoverlay -h uart5
+# Static IP configuration:
+interface eth0
+static ip_address=192.168.3.50/24
+#static ip6_address=fd51:42f8:caae:d92e::ff/64
+static routers=192.168.3.10
+static domain_name_servers= 8.8.8.8
 ```
-This give the GPIO location. Locate which pin on the header using 
+pi-ptp51 is
 ```
-dtoverlay -h uart2
+# Static IP configuration:
+interface eth0
+static ip_address=192.168.3.51/24
+static routers=192.168.3.10
+static domain_name_servers=8.8.8.8
 ```
 
