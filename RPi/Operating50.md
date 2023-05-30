@@ -7,7 +7,7 @@ leapfile leap-seconds.list
 tx_timestamp_timeout 100
 [eth0]
 ```
-Synchronize the PTP hardware clock from the GNSS, verify.
+Synchronize the PTP hardware clock from the GNSS, verify. Open an SSH window and run as shown.
 ```
 sudo ts2phc -f ptp.config -s nmea -m -q -l 7
 ```
@@ -22,4 +22,8 @@ ts2phc[73.340]: eth0 master offset          1 s2 freq   -2258
 ts2phc[73.400]: nmea sentence: GNRMC,131228.00,A,5510.00075,N,00726.09158,W,0.008,,300523,,,A,V
 ts2phc[74.348]: nmea delay: 145597639 ns
 ```
-
+Once this is working, open a different SSH window 
+```
+sudo ptp4l -f ptp.config -m -q
+```
+The Grand Master is now operating on the local LAN.
