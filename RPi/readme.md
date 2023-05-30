@@ -2,10 +2,9 @@
 ## Set the hostname
 
 Edit /etc/hostname and /etc/hosts to the correct hostnames
-PtP Master is pi-ptp50
-PtP Slave is pi-ptp51
 
-
+- PtP Master is pi-ptp50
+- PtP Slave is pi-ptp51
 
 ## Set static IP addresses
 Edit /etc/dhcpcd.conf 
