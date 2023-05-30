@@ -14,8 +14,11 @@ sudo apt install linuxptp
 ## Get TestPtP
 Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testing/selftests/ptp/testptp.c and compile
 ```
-gcc testptp.c -o testptp
+gcc -o testptp testptp.c -lrt
 ./testptp -h
+ls /dev
+sudo ./testptp  -d /dev/ptp0 -L 0,1
+sudo ./testptp  -d /dev/ptp0 -e 5
 ```
 ## Hardware Checks
 Check that the Ethernet card supports hardware time stamping
