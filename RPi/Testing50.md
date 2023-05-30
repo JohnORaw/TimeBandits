@@ -32,7 +32,7 @@ To echo the input from the GNSS to the UART at 38,400 type the command
 ```
 (stty 38400 -echo -icrnl; cat) </dev/ttyAMA0
 ```
-The output will be in NMEA0183 ASCII formet, something like
+The output will be in NMEA0183 ASCII format, something like
 ```
 $GNRMC,110824.00,A,5510.00032,N,00726.09001,W,0.006,,300523,,,A,V*02
 $GNVTG,,T,,M,0.006,N,0.012,K,A*38
