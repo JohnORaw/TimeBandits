@@ -35,10 +35,6 @@ To echo the input from the GNSS to the UART at 38,400 type the command
 The output will be in NMEA0183 ASCII format, something like
 ```
 $GNRMC,110824.00,A,5510.00032,N,00726.09001,W,0.006,,300523,,,A,V*02
-$GNVTG,,T,,M,0.006,N,0.012,K,A*38
-$GNGGA,110824.00,5510.00032,N,00726.09001,W,1,12,0.58,115.4,M,53.9,M,,*55
-$GNGSA,A,3,18,26,27,23,16,10,08,,,,,,1.05,0.58,0.88,1*0F
-$GNGSA,A,3,83,73,74,66,67,82,80,,,,,,1.05,0.58,0.88,2*04
 ```
 # Precision
 This setup is fine for rough work and prototyping. When installing for fixed use, there are many more hoops to jump through.
