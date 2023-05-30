@@ -37,9 +37,12 @@ static ip_address=192.168.3.51/24
 static routers=192.168.3.10
 static domain_name_servers=8.8.8.8
 ```
-## Get testptp
-Download the source and compile
+## Enable HW clock
+There is an I2C RTC on the IO board. Add the following line to /etc/config.txt
 ```
- wget https://raw.githubusercontent.com/torvalds/linux/master/tools/testing/selftests/ptp/testptp.c
- gcc -o testptp testptp.c -lrt
+ dtoverlay=i2c-rtc,pcf85063a,i2c_csi_dsi
+```
+Use the following command to test.
+```
+sudo hwclock --show
 ```
