@@ -1,0 +1,17 @@
+Using a generic CM4 IO Board, install linuxptp
+
+IO board manual https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
+
+Install PtP. The generic version in the repo has some downsides, but it works for these tests.
+```
+sudo apt install linuxptp
+```
+Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testing/selftests/ptp/testptp.c and compile
+```
+gcc testptp.c -o testptp
+./testptp -h
+```
+Check that the Ethernet card supports hardware time stamping
+```
+ethtool -T eth0
+```
