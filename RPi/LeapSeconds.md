@@ -12,3 +12,5 @@ and Reference Systems Service (IERS).
 A leap second is inserted to bring clocks back in line with reality, either on June 30th or December 31st of that year. 
 Leap seconds are announced by the IERS in its [Bulletin C.](https://www.iers.org/IERS/EN/Publications/Bulletins/bulletins.html) 
 For computational purposes, a standard file [leap-seconds.list](ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list) is used by Linux time services.
+
+wget ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list
