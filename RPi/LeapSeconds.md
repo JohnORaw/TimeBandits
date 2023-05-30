@@ -17,7 +17,13 @@ In Linux, the following command downloads this list.
 ```
 wget ftp://ftp.boulder.nist.gov/pub/time/leap-seconds.list
 ```
-To adjust PHC Clock for difference between UTC and TAI, the phc_ctl command is used.
+To adjust PHC Clock for difference between UTC and TAI (currently 37 seconds), the phc_ctl command is used.
 ```
-sudo ts2phc -f ptp.config -s nmea -m
+sudo phc_ctl eth0 "set;" adj 37
 ```
+The ouput should be something like
+```
+phc_ctl[392.928]: set clock time to 1685449352.745774672 or Tue May 30 13:22:32 2023
+phc_ctl[392.930]: adjusted clock by 37.000000 seconds
+```
+
