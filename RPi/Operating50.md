@@ -1,6 +1,5 @@
 # Operating pi-ptp50
-Firstly, I create a ptp.config file to define any common parameters.
-
+Create a ptp.config file to define any common parameters. If the GNSS is connected via USB, the device name may be /dev/ttyACM0
 ```
 [global]
 ts2phc.nmea_serialport /dev/ttyAMA0
