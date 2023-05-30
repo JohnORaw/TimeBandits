@@ -1,6 +1,10 @@
-Using a generic CM4 IO Board, install linuxptp
-
-IO board manual https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
+# Using generic CM4 IO Boards
+Connect to a live network, do updates to begin
+```
+sudo apt update
+sudo apt upgrade -y
+```
+The IO board manual can be found at https://datasheets.raspberrypi.com/cm4io/cm4io-datasheet.pdf
 
 ## Install PtP
 The generic version in the repo has some downsides, but it works for these tests.
