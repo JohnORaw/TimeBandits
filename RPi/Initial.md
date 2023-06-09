@@ -25,16 +25,16 @@ pi-ptp50 is
 ```
 # Static IP configuration:
 interface eth0
-static ip_address=192.168.3.50/24
-static routers=192.168.3.10
+static ip_address=192.168.1.50/24
+static routers=192.168.1.1
 static domain_name_servers= 8.8.8.8
 ```
 pi-ptp51 is
 ```
 # Static IP configuration:
 interface eth0
-static ip_address=192.168.3.51/24
-static routers=192.168.3.10
+static ip_address=192.168.1.51/24
+static routers=192.168.1.1
 static domain_name_servers=8.8.8.8
 ```
 ## Enable HW clock
