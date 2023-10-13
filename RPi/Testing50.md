@@ -8,6 +8,16 @@ This demo uses the GNSS OEM ELT0113, wire as shown.
 
 ![pi-ptp50](pi-ptp50.jpg)
 
+# ptp.config
+My ptp.config file was as follows
+```
+[global]
+ts2phc.nmea_serialport /dev/ttyAMA0
+leapfile leap-seconds.list
+tx_timestamp_timeout 100
+[eth0]
+```
+
 # Testing 1PPS
 Set pin zero to external time stamp and test
 
