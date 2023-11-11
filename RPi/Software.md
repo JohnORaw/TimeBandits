@@ -14,3 +14,9 @@ Check that ptp devices show
 ```
 ls /dev
 ```
+
+Check that the Ethernet card supports hardware time stamping. Make sure to use the correct card label, mine was eth0.
+
+```
+ethtool -T eth0
+```
