@@ -38,4 +38,29 @@ Any of the applications are run to ensure installation was succesful.
 ```
 ./ptp4l
 ```
+## IP Assignment ##
+This server was configured for the DMZ of my home network 192.168.1.0/24, gateway on .254
+```
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eno1:
+      dhcp4: no
+      addresses:
+        - 192.168.1.52/24
+      routes:
+        - to: default
+          via: 192.168.1.254
+      nameservers:
+        addresses:
+          - 9.9.9.9
+          - 8.8.8.8
+    eno2:
+      dhcp4: true
+    enp10s0f0:
+      dhcp4: true
+    enp10s0f1:
+      dhcp4: true
+  version: 2
+```
 
