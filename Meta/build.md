@@ -40,6 +40,12 @@ Any of the applications are run to ensure installation was succesful.
 ```
 ## IP Assignment ##
 This server was configured for the DMZ of my home network 192.168.1.0/24, gateway on .254
+
+```
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+Edit the file as shown
+
 ```
 # This is the network config written by 'subiquity'
 network:
