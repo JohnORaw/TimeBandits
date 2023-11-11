@@ -79,4 +79,4 @@ sudo dmesg | grep ocp
 ```
 You should get a result as shown.
 
-![output](ptp_ocp.PNG)
+![output](ptp_ocp.png)
