@@ -1,5 +1,6 @@
-# KMNServer 
-These are the build instruction for the time server in the KMN data centre. This server is intended to synch a local hardware clock with HEANet over PtP.
+# Meta Server 
+These are the build instruction for the time server in the KMN data centre. 
+This server is intended to synch a local hardware clock via GNSS.
 
 ## Initial Setup
 The hardware is a legacy Dell PE R520. The server was set to UEFI Boot and UB2204 was installed from a USB key. IP address is via DHCP and only interface *eno1* has a connection. Updates were carried out.
