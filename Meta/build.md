@@ -64,3 +64,9 @@ network:
   version: 2
 ```
 
+## TEst the card ##
+Many of the examples on line require a rebuild of the kernel etc. Thhis should not be required with UB2204. Test that the card is recognized using 
+
+```
+modprobe ptp_ocp
+```
