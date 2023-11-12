@@ -19,3 +19,8 @@ Based on this, I have
 - A new clock on ptp4
 - GNSS on ssyS4
 - MAC on ttyS5
+
+I need to be root to do some of this work.
+```
+sudo -i
+```

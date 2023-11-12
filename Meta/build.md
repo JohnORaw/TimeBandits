@@ -38,6 +38,13 @@ Any of the applications are run to ensure installation was succesful.
 ```
 ./ptp4l
 ```
+## TestPTP ##
+Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testing/selftests/ptp/testptp.c and compile
+```
+gcc -o testptp testptp.c -lrt
+./testptp -h
+```
+
 ## IP Assignment ##
 This server was configured for the DMZ of my home network 192.168.1.0/24, gateway on .254
 
