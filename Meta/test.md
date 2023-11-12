@@ -8,3 +8,14 @@ ls /sys/class/timecard/ocp0/
 ```
 
 ![ocp0](ocp0.png)
+
+I installed tree so I could do a proper recce.
+
+```
+sudo apt install tree
+```
+
+Based on this, I have
+- A new clock on ptp4
+- GNSS on ssyS4
+- MAC on ttyS5
