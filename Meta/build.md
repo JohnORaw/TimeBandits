@@ -44,6 +44,11 @@ Get testptp from repo https://github.com/torvalds/linux/blob/master/tools/testin
 gcc -o testptp testptp.c -lrt
 ./testptp -h
 ```
+Finally, copy testptp executable to an appropriate directory
+
+```
+sudo cp testptp /root/bin
+```
 
 ## IP Assignment ##
 This server was configured for the DMZ of my home network 192.168.1.0/24, gateway on .254
@@ -77,13 +82,3 @@ network:
   version: 2
 ```
 
-## Test the card ##
-Many of the examples on line require a rebuild of the kernel etc. This should not be required with UB2204. Test that the card is recognized using 
-
-```
-modprobe ptp_ocp
-sudo dmesg | grep ocp
-```
-You should get a result as shown.
-
-![output](ptp_ocp.png)
