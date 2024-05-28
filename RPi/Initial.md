@@ -39,7 +39,8 @@ static domain_name_servers=8.8.8.8
 ```
 ## Enable HW clock
 There is an I2C RTC on the IO board. Add the following line to /etc/config.txt
-From 2024, in  /boot/firmware/config.txt
+
+On a RPi CM4 Lite from 2024, in /boot/firmware/config.txt
 ```
  dtoverlay=i2c-rtc,pcf85063a,i2c_csi_dsi
 ```
