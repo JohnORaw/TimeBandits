@@ -85,6 +85,8 @@ Typical output is as shown.
 ## RPi Setup
 To make this work on the Rpi CM4, follow the recipe for pi-ptp51, that was the RPi slave.
 I changed the interface in *ptp1-cwt.cfg* from **eno1** to **eth0**
+
+
 To run, I used 
 ```
 sudo ./ptp4l -f ptp1-cwt.cfg -m -q -s
