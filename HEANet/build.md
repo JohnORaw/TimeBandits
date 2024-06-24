@@ -39,7 +39,7 @@ Any of the applications are run to ensure installation was succesful.
 ```
 
 # Test to HEANet
-Credit to Eoin Kenny in HEANet as the source of details below. Note that this test works fine on a home connection with NAT'd CPE. It did not work on a double NAT'd connection. Further investigation required.
+Credit to Eoin Kenny in HEANet as the source of details below. Note that this test works fine on a home connection with NAT'd CPE. Note that through a firewall (e.g. Fortigate) you need to select to explicitly preserve the source port: credit to Danny McFadden for figuring that out.  
 
 A file is created *ptp1-cwt.cfg* in the linuxptp-3.1.1 directory.
 ```
