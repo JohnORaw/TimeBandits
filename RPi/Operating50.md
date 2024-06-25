@@ -77,7 +77,7 @@ Jun 23 20:12:15 cm4 ts2phc[798]: ts2phc[1600.551]: nmea sentence: GNGSA,A,3,13,0
 Jun 23 20:12:15 cm4 ts2phc[798]: ts2phc[1600.601]: nmea sentence: GNGSA,A,3,65,81,87,88,,,,,,,,,1.73,1.03,1.39
 Jun 23 20:12:15 cm4 ts2phc[798]: ts2phc[1600.667]: nmea sentence: GPGSV,4,1,13,05,50,297,26,06,07,184,,07,58,084,,09,27,078,10
 ```
-### Eanble ts2phc to start on reboot
+### Enable ts2phc to start on reboot
 ```
 root@cm4:/home/pi# systemctl enable ts2phc
 Created symlink /etc/systemd/system/multi-user.target.wants/ts2phc.service → /etc/systemd/system/ts2phc.service.
